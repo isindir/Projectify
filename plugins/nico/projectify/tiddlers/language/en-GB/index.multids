@@ -49,6 +49,7 @@ Or: or
 OtherTasks: Other tasks
 Overdue: Overdue
 Priority/Hint: Priority
+Stage/Hint: Stage
 ProjectArchived: This project is archived.
 Projects: Projects
 QuickAddTodo: Quick add todo

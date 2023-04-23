@@ -8,7 +8,7 @@ AddSubTasks/Caption: Teilaufgabe erstellen
 AddToInbox/Hint: Verwende <kbd>{{$:/config/shortcuts/py-quick-capture}}</kbd> um die Erfassung zu starten.
 AddToInbox/Placeholder: Aufgabe erstellen ...
 AddTodo/Caption: Aufgabe erstellen
-AddTodo/Hint: Erstelle eine neue Aufgabe im Projekt 
+AddTodo/Hint: Erstelle eine neue Aufgabe im Projekt
 AddTodoToProject/Placeholder: Aufgabenbeschreibung ...
 AllClear: Alles erledigt!
 Archive: Archiv
@@ -49,6 +49,7 @@ Or: oder
 OtherTasks: Weitere Aufgaben
 Overdue: Überfällig
 Priority/Hint: Priorität
+Stage/Hint: Stufe
 ProjectArchived: Dieses Projekt ist archiviert.
 Projects: Projekte
 QuickAddTodo: Aufgabe hinzufügen

@@ -19,7 +19,8 @@ type: text/vnd.tiddlywiki
 
   <$reveal state=<<popupTiddler>> type="popup" position="belowleft" animate="no">
     <div class="tc-drop-down py-drop-down py-date-picker py-todo-actions-drop-down">
-      {{||$:/plugins/nico/projectify/ui/forms/TodoPriority}}
+      Stage: {{||$:/plugins/nico/projectify/ui/forms/TodoStage}}
+      Priority: {{||$:/plugins/nico/projectify/ui/forms/TodoPriority}}
       <hr/>
       {{||$:/plugins/nico/projectify/ui/forms/TodoDueDate}}
       <hr/>

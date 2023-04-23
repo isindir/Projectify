@@ -29,6 +29,28 @@ type: text/vnd.tiddlywiki
 	  Scheduled
 	  <$action-setfield $tiddler=<<stateTiddler>> filter="[!tag[done]has[due]]"/>
 	</$button>
+	<hr />
+	<$button class="tc-btn-invisible">
+	  In Progress
+	  <$action-setfield $tiddler=<<stateTiddler>> filter="[!tag[done]stage[progress]]"/>
+	</$button>
+	<$button class="tc-btn-invisible">
+	  In Progress - Secondary
+	  <$action-setfield $tiddler=<<stateTiddler>> filter="[!tag[done]stage[secondary]]"/>
+	</$button>
+	<$button class="tc-btn-invisible">
+	  In Backlog
+	  <$action-setfield $tiddler=<<stateTiddler>> filter="[!tag[done]stage[backlog]]"/>
+	</$button>
+	<$button class="tc-btn-invisible">
+	  In Review
+	  <$action-setfield $tiddler=<<stateTiddler>> filter="[!tag[done]stage[review]]"/>
+	</$button>
+	<$button class="tc-btn-invisible">
+	  In Blocked
+	  <$action-setfield $tiddler=<<stateTiddler>> filter="[!tag[done]stage[blocked]]"/>
+	</$button>
+	<hr />
 	<$button class="tc-btn-invisible">
 	  High priority
 	  <$action-setfield $tiddler=<<stateTiddler>> filter="[!tag[done]priority[3]]"/>

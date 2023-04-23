@@ -24,6 +24,9 @@ type: text/vnd.tiddlywiki
 
   <$checkbox tag="done" actions=<<save-actions>>>
     {{||$:/plugins/nico/projectify/ui/buttons/Checkbox}}
+    <$reveal type="nomatch" state="!!stage" text="">
+      {{||$:/plugins/nico/projectify/ui/buttons/TodoStageItem}}
+    </$reveal>
     <$reveal type="nomatch" state="!!priority" text="">
       {{||$:/plugins/nico/projectify/ui/buttons/TodoPriority}}
     </$reveal>
