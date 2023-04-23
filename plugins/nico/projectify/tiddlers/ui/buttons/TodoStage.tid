@@ -1,0 +1,25 @@
+created: 20200424135048294
+modified: 20210112180542060
+tags:
+title: $:/plugins/nico/projectify/ui/buttons/TodoStage
+type: text/vnd.tiddlywiki
+
+<$vars
+  popupTiddler=<<qualify "$:/state/projectify/due-stage-dropdown">>
+  cssClass={{{ [[py-btn py-stage py-stage-]addsuffix{!!stage}] }}}
+>
+  <$button
+    class=<<cssClass>>
+    popup=<<popupTiddler>>
+    tooltip={{$:/language/projectify/Stage/Hint}}
+    aria-label={{$:/language/projectify/Stage/Hint}}
+  >
+    {{$:/plugins/nico/projectify/images/task}}
+  </$button>
+
+  <$reveal state=<<popupTiddler>> type="popup" position="belowleft" animate="no">
+    <div class="tc-drop-down py-drop-down">
+      {{||$:/plugins/nico/projectify/ui/forms/TodoStage}}
+    </div>
+  </$reveal>
+</$vars>

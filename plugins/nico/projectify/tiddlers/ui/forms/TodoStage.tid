@@ -1,0 +1,25 @@
+created: 20210110175047050
+modified: 20210110175954318
+tags:
+title: $:/plugins/nico/projectify/ui/forms/TodoStage
+type: text/vnd.tiddlywiki
+
+\define stage-icon()
+{{$:/plugins/nico/projectify/images/$(stage)$}}
+\end
+
+<div class="py-stages">
+  <$list filter="backlog review blocked secondary progress" variable="stage">
+    <$button class={{{ [[tc-btn-invisible py-stage-]addsuffix<stage>] }}}>
+	  <<stage-icon>>
+      <$action-setfield stage=<<stage>>/>
+      <$action-sendmessage $message="tm-auto-save-wiki"/>
+    </$button>
+  </$list>
+
+  <$button class="tc-btn-invisible">
+    {{$:/plugins/nico/projectify/images/slash-circle}}
+    <$action-deletefield $field="stage"/>
+    <$action-sendmessage $message="tm-auto-save-wiki"/>
+  </$button>
+</div>

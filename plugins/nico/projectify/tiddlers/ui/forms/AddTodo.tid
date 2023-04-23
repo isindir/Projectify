@@ -14,10 +14,12 @@ type: text/vnd.tiddlywiki
 
   <$action-listops $tiddler={{$:/temp/projectify/new-todo}} $tags=<<todo-tags>>/>
   <$action-setfield $tiddler={{$:/temp/projectify/new-todo}} due={{{ [<stateTiddler>get[due]] }}}/>
+  <$action-setfield $tiddler={{$:/temp/projectify/new-todo}} stage={{{ [<stateTiddler>get[stage]] }}}/>
   <$action-setfield $tiddler={{$:/temp/projectify/new-todo}} priority={{{ [<stateTiddler>get[priority]] }}}/>
   <$action-deletefield $tiddler=<<stateTiddler>> $field="todo-name"/>
   <$action-deletefield $tiddler=<<stateTiddler>> $field="due"/>
   <$action-deletefield $tiddler=<<stateTiddler>> $field="priority"/>
+  <$action-deletefield $tiddler=<<stateTiddler>> $field="stage"/>
 
   <$action-sendmessage $message="tm-auto-save-wiki"/>
 </$list>
@@ -38,6 +40,7 @@ type: text/vnd.tiddlywiki
     <div class="py-todo-actions">
       <$vars currentTiddler=<<stateTiddler>>>
 	<$transclude tiddler="$:/plugins/nico/projectify/ui/buttons/TodoDueDate" mode="inline"/>
+	<$transclude tiddler="$:/plugins/nico/projectify/ui/buttons/TodoStage" mode="inline"/>
 	<$transclude tiddler="$:/plugins/nico/projectify/ui/buttons/TodoPriority" mode="inline"/>
       </$vars>
     </div>

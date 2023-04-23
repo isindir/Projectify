@@ -113,6 +113,10 @@ type: text/vnd.tiddlywiki
   border: none;
 }
 
+.py-todo .py-btn.py-stage {
+  border: none;
+}
+
 .py-todo .py-project-link {
   font-size: .8em;
   color: #aaa;
@@ -145,6 +149,14 @@ type: text/vnd.tiddlywiki
   border-radius: 4px;
 }
 
+.py-todo-actions .py-btn,
+.py-todo .py-btn.py-stage {
+  color: #999;
+  fill: #999;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
 .py-due-date.py-overdue {
   color: <<colour background>>;
   background: #e73939;
@@ -166,6 +178,18 @@ type: text/vnd.tiddlywiki
 @media (min-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
   .py-todo .py-todo-actions .py-btn.py-not-scheduled,
   .py-todo .py-todo-actions .py-btn.py-priority- {
+    opacity: 0;
+    transition: opacity ease-in .14s;
+  }
+
+  .py-todo:hover .py-todo-actions .py-btn {
+    opacity: 1 !important;
+  }
+}
+
+@media (min-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
+  .py-todo .py-todo-actions .py-btn.py-not-scheduled,
+  .py-todo .py-todo-actions .py-btn.py-stage- {
     opacity: 0;
     transition: opacity ease-in .14s;
   }
@@ -270,6 +294,56 @@ type: text/vnd.tiddlywiki
 .py-drop-down .py-priority-1,
 .py-drop-down .py-priority-1 svg,
 .py-btn.py-priority-1 {
+  fill: #24cd5e;
+  color: #24cd5e;
+}
+
+.tc-drop-down .py-stages {
+  display: flex;
+  align-items: space-between;
+}
+
+.tc-drop-down .py-stages .tc-btn-invisible {
+  width: auto;
+  text-align: center;
+}
+
+.py-stage-backlog, .py-stage-backlog svg,
+.py-drop-down .py-stage-backlog,
+.py-drop-down .py-stage-backlog svg,
+.py-btn.py-stage-backlog {
+  fill: #3079ff;
+  color: #3079ff;
+}
+
+.py-stage-secondary, .py-stage-secondary svg,
+.py-drop-down .py-stage-secondary,
+.py-drop-down .py-stage-secondary svg,
+.py-btn.py-stage-secondary {
+  fill: #e77a39;
+  color: #e77a39;
+}
+
+.py-stage-blocked, .py-stage-blocked svg,
+.py-drop-down .py-stage-blocked,
+.py-drop-down .py-stage-blocked svg,
+.py-btn.py-stage-blocked {
+  fill: #e73939;
+  color: #e73939;
+}
+
+.py-stage-review, .py-stage-review svg,
+.py-drop-down .py-stage-review,
+.py-drop-down .py-stage-review svg,
+.py-btn.py-stage-review {
+  fill: #a225ee;
+  color: #a225ee;
+}
+
+.py-stage-progress, .py-stage-progress svg,
+.py-drop-down .py-stage-progress,
+.py-drop-down .py-stage-progress svg,
+.py-btn.py-stage-progress {
   fill: #24cd5e;
   color: #24cd5e;
 }
