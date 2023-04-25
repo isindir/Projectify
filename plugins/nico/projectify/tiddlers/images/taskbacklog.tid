@@ -1,7 +1,7 @@
 created: 20200424203654397
 modified: 20210122213422836
 tags: $:/tags/Image
-title: $:/plugins/nico/projectify/images/backlog
+title: $:/plugins/nico/projectify/images/taskbacklog
 type: text/vnd.tiddlywiki
 
 <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 22 22">

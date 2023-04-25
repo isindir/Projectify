@@ -10,7 +10,7 @@ type: text/vnd.tiddlywiki
 <$list filter=<<py-is-todo>>>
   <div class="py-todo-heading">
     {{||$:/plugins/nico/projectify/ui/buttons/TodoDueDate}}
-    {{||$:/plugins/nico/projectify/ui/buttons/TodoStageItem}}
+    {{||$:/plugins/nico/projectify/ui/buttons/TodoStage}}
     {{||$:/plugins/nico/projectify/ui/buttons/TodoPriority}}
 
     <$vars popupTiddler=<<qualify "$:/state/projectify/todo-heading-dropdown">>>

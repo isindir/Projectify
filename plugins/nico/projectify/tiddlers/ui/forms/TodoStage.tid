@@ -5,7 +5,7 @@ title: $:/plugins/nico/projectify/ui/forms/TodoStage
 type: text/vnd.tiddlywiki
 
 \define stage-icon()
-{{$:/plugins/nico/projectify/images/$(stage)$}}
+{{$:/plugins/nico/projectify/images/task$(stage)$}}
 \end
 
 <div class="py-stages">
