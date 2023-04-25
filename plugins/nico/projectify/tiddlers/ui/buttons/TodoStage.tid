@@ -4,6 +4,10 @@ tags:
 title: $:/plugins/nico/projectify/ui/buttons/TodoStage
 type: text/vnd.tiddlywiki
 
+\define stage-icon()
+{{$:/plugins/nico/projectify/images/task$(stage)$}}
+\end
+
 <$vars
   popupTiddler=<<qualify "$:/state/projectify/due-stage-dropdown">>
   cssClass={{{ [[py-btn py-stage py-stage-]addsuffix{!!stage}] }}}
@@ -14,7 +18,7 @@ type: text/vnd.tiddlywiki
     tooltip={{$:/language/projectify/Stage/Hint}}
     aria-label={{$:/language/projectify/Stage/Hint}}
   >
-    {{$:/plugins/nico/projectify/images/task}}
+    <<stage-icon>>
   </$button>
 
   <$reveal state=<<popupTiddler>> type="popup" position="belowleft" animate="no">
