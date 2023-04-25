@@ -5,6 +5,12 @@ tags:
 title: $:/plugins/nico/projectify/changelog
 type: text/vnd.tiddlywiki
 
+! Release 0.15.2
+
+!! Fixes
+
+* Missing variable definition for todo item stage in button definition
+
 ! Release 0.15.1
 
 !! Features

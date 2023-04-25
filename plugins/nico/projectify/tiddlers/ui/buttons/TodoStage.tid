@@ -11,6 +11,7 @@ type: text/vnd.tiddlywiki
 <$vars
   popupTiddler=<<qualify "$:/state/projectify/due-stage-dropdown">>
   cssClass={{{ [[py-btn py-stage py-stage-]addsuffix{!!stage}] }}}
+  stage={{{ [[]addsuffix{!!stage}] }}}
 >
   <$button
     class=<<cssClass>>
