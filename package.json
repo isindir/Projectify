@@ -1,6 +1,6 @@
 {
   "name": "projectify",
-  "version": "0.5.14",
+  "version": "0.5.15",
   "description": "Project and todo management in TiddlyWiki",
   "main": "index.js",
   "scripts": {
@@ -29,10 +29,10 @@
   },
   "homepage": "https://github.com/isindir/projectify#readme",
   "dependencies": {
-    "tiddlywiki": "^5.3.6"
+    "tiddlywiki": "^5.3.7"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
-    "nodemon": "^3.1.9"
+    "nodemon": "^3.1.10"
   }
 }
