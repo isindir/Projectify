@@ -316,6 +316,30 @@ type: text/vnd.tiddlywiki
   color: #3079ff;
 }
 
+.py-stage-new, .py-stage-new svg,
+.py-drop-down .py-stage-new,
+.py-drop-down .py-stage-new svg,
+.py-btn.py-stage-new {
+  fill: #3079ff;
+  color: #3079ff;
+}
+
+.py-stage-tracking, .py-stage-tracking svg,
+.py-drop-down .py-stage-tracking,
+.py-drop-down .py-stage-tracking svg,
+.py-btn.py-stage-tracking {
+  fill: #a225ee;
+  color: #a225ee;
+}
+
+.py-stage-redefine, .py-stage-redefine svg,
+.py-drop-down .py-stage-redefine,
+.py-drop-down .py-stage-redefine svg,
+.py-btn.py-stage-redefine {
+  fill: #a225ee;
+  color: #a225ee;
+}
+
 .py-stage-secondary, .py-stage-secondary svg,
 .py-drop-down .py-stage-secondary,
 .py-drop-down .py-stage-secondary svg,
@@ -332,6 +356,14 @@ type: text/vnd.tiddlywiki
   color: #e73939;
 }
 
+.py-stage-rejected, .py-stage-rejected svg,
+.py-drop-down .py-stage-rejected,
+.py-drop-down .py-stage-rejected svg,
+.py-btn.py-stage-rejected {
+  fill: #e73939;
+  color: #e73939;
+}
+
 .py-stage-review, .py-stage-review svg,
 .py-drop-down .py-stage-review,
 .py-drop-down .py-stage-review svg,
@@ -344,6 +376,14 @@ type: text/vnd.tiddlywiki
 .py-drop-down .py-stage-progress,
 .py-drop-down .py-stage-progress svg,
 .py-btn.py-stage-progress {
+  fill: #24cd5e;
+  color: #24cd5e;
+}
+
+.py-stage-done, .py-stage-done svg,
+.py-drop-down .py-stage-done,
+.py-drop-down .py-stage-done svg,
+.py-btn.py-stage-done {
   fill: #24cd5e;
   color: #24cd5e;
 }

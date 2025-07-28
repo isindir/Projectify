@@ -1,6 +1,6 @@
 caption: 
 created: 20201130170606065
-modified: 20201212170605436
+modified: 20250728160502843
 tags: $:/tags/GettingStarted
 title: GettingStarted
 type: text/vnd.tiddlywiki
@@ -8,3 +8,17 @@ type: text/vnd.tiddlywiki
 ~Projectify is a simple [[TiddlyWiki|https://tiddlywiki.com]] plugin for managing projects & todo lists, inspired by other tools such as [[Todoist|https://todoist.com]] and [[Basecamp|https://basecamp.com]].
 
 I started this project as an experiment to see how good ~TiddlyWiki could be as a Web Application Platform. It turns out to be an extremely good foundation for building SPAs.
+
+!! Stages
+
+|State|Icon|Description|Link|
+|New|{{$:/plugins/nico/projectify/images/tasknew}}|New task - may need discussion and better definition|$:/plugins/nico/projectify/images/tasknew|
+|Backlog|{{$:/plugins/nico/projectify/images/taskbacklog}}|Task in a backlog, defined but not yet selected for development|$:/plugins/nico/projectify/images/taskbacklog|
+|Next|{{$:/plugins/nico/projectify/images/taskprogress}}|Orange - Item ready to be working on|$:/plugins/nico/projectify/images/taskprogress|
+|In Progress|{{$:/plugins/nico/projectify/images/taskprogress}}|Green - task in progress|$:/plugins/nico/projectify/images/taskprogress|
+|Blocked|{{$:/plugins/nico/projectify/images/taskblocked}}|Blocked task|$:/plugins/nico/projectify/images/taskblocked|
+|Redefine|{{$:/plugins/nico/projectify/images/taskredefine}}|Task which needs to be redefined and put back in backlog|$:/plugins/nico/projectify/images/taskredefine|
+|Pending Review|{{$:/plugins/nico/projectify/images/taskreview}}|Task in review/testing|$:/plugins/nico/projectify/images/taskreview|
+|Tracking|{{$:/plugins/nico/projectify/images/tasktracking}}|Tracking - almost done, needs confirmation of final successful deployment|$:/plugins/nico/projectify/images/tasktracking|
+|Rejected|{{$:/plugins/nico/projectify/images/taskrejected}}|Rejected or closed not to be done task|$:/plugins/nico/projectify/images/taskrejected|
+|Done|{{$:/plugins/nico/projectify/images/taskdone}}|Task which is finished|$:/plugins/nico/projectify/images/taskdone|

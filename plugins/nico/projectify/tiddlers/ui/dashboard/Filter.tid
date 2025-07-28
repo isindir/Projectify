@@ -31,24 +31,44 @@ type: text/vnd.tiddlywiki
 	</$button>
 	<hr />
 	<$button class="tc-btn-invisible">
-	  In Progress
-	  <$action-setfield $tiddler=<<stateTiddler>> filter="[!tag[done]stage[progress]]"/>
-	</$button>
-	<$button class="tc-btn-invisible">
-	  In Progress - Secondary
-	  <$action-setfield $tiddler=<<stateTiddler>> filter="[!tag[done]stage[secondary]]"/>
+	  In New
+	  <$action-setfield $tiddler=<<stateTiddler>> filter="[!tag[done]stage[new]]"/>
 	</$button>
 	<$button class="tc-btn-invisible">
 	  In Backlog
 	  <$action-setfield $tiddler=<<stateTiddler>> filter="[!tag[done]stage[backlog]]"/>
 	</$button>
 	<$button class="tc-btn-invisible">
-	  In Review
-	  <$action-setfield $tiddler=<<stateTiddler>> filter="[!tag[done]stage[review]]"/>
+	  In Progress - Next
+	  <$action-setfield $tiddler=<<stateTiddler>> filter="[!tag[done]stage[secondary]]"/>
+	</$button>
+	<$button class="tc-btn-invisible">
+	  In Progress
+	  <$action-setfield $tiddler=<<stateTiddler>> filter="[!tag[done]stage[progress]]"/>
 	</$button>
 	<$button class="tc-btn-invisible">
 	  In Blocked
 	  <$action-setfield $tiddler=<<stateTiddler>> filter="[!tag[done]stage[blocked]]"/>
+	</$button>
+	<$button class="tc-btn-invisible">
+	  In Redefine
+	  <$action-setfield $tiddler=<<stateTiddler>> filter="[!tag[done]stage[redefine]]"/>
+	</$button>
+	<$button class="tc-btn-invisible">
+	  In Review
+	  <$action-setfield $tiddler=<<stateTiddler>> filter="[!tag[done]stage[review]]"/>
+	</$button>
+	<$button class="tc-btn-invisible">
+	  In Tracking
+	  <$action-setfield $tiddler=<<stateTiddler>> filter="[!tag[done]stage[tracking]]"/>
+	</$button>
+	<$button class="tc-btn-invisible">
+	  In Rejected
+	  <$action-setfield $tiddler=<<stateTiddler>> filter="[!tag[done]stage[rejected]]"/>
+	</$button>
+	<$button class="tc-btn-invisible">
+	  In Done
+	  <$action-setfield $tiddler=<<stateTiddler>> filter="[!tag[done]stage[done]]"/>
 	</$button>
 	<hr />
 	<$button class="tc-btn-invisible">
