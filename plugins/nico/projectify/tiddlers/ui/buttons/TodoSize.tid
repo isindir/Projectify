@@ -1,0 +1,35 @@
+created: 20200424135048294
+modified: 20210112180542060
+tags:
+title: $:/plugins/nico/projectify/ui/buttons/TodoSize
+type: text/vnd.tiddlywiki
+
+\define size-icon()
+<$list filter="[<size>!is[blank]]" variable="null">
+{{$:/plugins/nico/projectify/images/task$(size)$}}
+</$list>
+<$list filter="[<size>is[blank]]" variable="null">
+{{$:/plugins/nico/projectify/images/tasksize}}
+</$list>
+\end
+
+<$vars
+  popupTiddler=<<qualify "$:/state/projectify/due-size-dropdown">>
+  cssClass={{{ [[py-btn py-size py-size-]addsuffix{!!size}] }}}
+  size={{{ [[]addsuffix{!!size}] }}}
+>
+  <$button
+    class=<<cssClass>>
+    popup=<<popupTiddler>>
+    tooltip={{$:/language/projectify/size/Hint}}
+    aria-label={{$:/language/projectify/size/Hint}}
+  >
+    <<size-icon>>
+  </$button>
+
+  <$reveal state=<<popupTiddler>> type="popup" position="belowleft" animate="no">
+    <div class="tc-drop-down py-drop-down">
+      {{||$:/plugins/nico/projectify/ui/forms/TodoSize}}
+    </div>
+  </$reveal>
+</$vars>

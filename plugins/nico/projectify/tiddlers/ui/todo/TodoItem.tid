@@ -30,6 +30,9 @@ type: text/vnd.tiddlywiki
     <$reveal type="nomatch" state="!!priority" text="">
       {{||$:/plugins/nico/projectify/ui/buttons/TodoPriority}}
     </$reveal>
+    <$reveal type="nomatch" state="!!size" text="">
+      {{||$:/plugins/nico/projectify/ui/buttons/TodoSize}}
+    </$reveal>
     <$link to={{!!title}}>
       {{||$:/plugins/nico/projectify/ui/todo/TodoCaption}}
       <$list filter=<<py-has-todos>> variable="ignore">

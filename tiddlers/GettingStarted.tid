@@ -1,6 +1,6 @@
 caption: 
 created: 20201130170606065
-modified: 20250728160502843
+modified: 20250728202012698
 tags: $:/tags/GettingStarted
 title: GettingStarted
 type: text/vnd.tiddlywiki
@@ -22,3 +22,14 @@ I started this project as an experiment to see how good ~TiddlyWiki could be as 
 |Tracking|{{$:/plugins/nico/projectify/images/tasktracking}}|Tracking - almost done, needs confirmation of final successful deployment|$:/plugins/nico/projectify/images/tasktracking|
 |Rejected|{{$:/plugins/nico/projectify/images/taskrejected}}|Rejected or closed not to be done task|$:/plugins/nico/projectify/images/taskrejected|
 |Done|{{$:/plugins/nico/projectify/images/taskdone}}|Task which is finished|$:/plugins/nico/projectify/images/taskdone|
+
+!! Sizes
+
+|Size|Emoji|Description|Links|
+|0|{{$:/plugins/nico/projectify/images/taskcoffee}}|Coffee break (very quick task)|$:/plugins/nico/projectify/images/taskcoffee|
+|1|{{$:/plugins/nico/projectify/images/tasktiny}}|Tiny (ant-sized task)|$:/plugins/nico/projectify/images/tasktiny|
+|2|{{$:/plugins/nico/projectify/images/tasksmall}}|Small (mouse)|$:/plugins/nico/projectify/images/tasksmall|
+|3|{{$:/plugins/nico/projectify/images/taskmedium}}|Medium (cat)|$:/plugins/nico/projectify/images/taskmedium|
+|5|{{$:/plugins/nico/projectify/images/tasklarge}}|Large (lion)|$:/plugins/nico/projectify/images/tasklarge|
+|8|{{$:/plugins/nico/projectify/images/taskxlarge}}|XL (elephant)|$:/plugins/nico/projectify/images/taskxlarge|
+|13|{{$:/plugins/nico/projectify/images/taskxxlarge}}|XXL (dragon — break it down)|$:/plugins/nico/projectify/images/taskxxlarge|
