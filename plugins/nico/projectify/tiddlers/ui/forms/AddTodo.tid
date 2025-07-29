@@ -16,10 +16,12 @@ type: text/vnd.tiddlywiki
   <$action-setfield $tiddler={{$:/temp/projectify/new-todo}} due={{{ [<stateTiddler>get[due]] }}}/>
   <$action-setfield $tiddler={{$:/temp/projectify/new-todo}} stage={{{ [<stateTiddler>get[stage]] }}}/>
   <$action-setfield $tiddler={{$:/temp/projectify/new-todo}} priority={{{ [<stateTiddler>get[priority]] }}}/>
+  <$action-setfield $tiddler={{$:/temp/projectify/new-todo}} size={{{ [<stateTiddler>get[size]] }}}/>
   <$action-deletefield $tiddler=<<stateTiddler>> $field="todo-name"/>
   <$action-deletefield $tiddler=<<stateTiddler>> $field="due"/>
   <$action-deletefield $tiddler=<<stateTiddler>> $field="priority"/>
   <$action-deletefield $tiddler=<<stateTiddler>> $field="stage"/>
+  <$action-deletefield $tiddler=<<stateTiddler>> $field="size"/>
 
   <$action-sendmessage $message="tm-auto-save-wiki"/>
 </$list>
@@ -42,6 +44,7 @@ type: text/vnd.tiddlywiki
 	<$transclude tiddler="$:/plugins/nico/projectify/ui/buttons/TodoDueDate" mode="inline"/>
 	<$transclude tiddler="$:/plugins/nico/projectify/ui/buttons/TodoStage" mode="inline"/>
 	<$transclude tiddler="$:/plugins/nico/projectify/ui/buttons/TodoPriority" mode="inline"/>
+	<$transclude tiddler="$:/plugins/nico/projectify/ui/buttons/TodoSize" mode="inline"/>
       </$vars>
     </div>
   </div>

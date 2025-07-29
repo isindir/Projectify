@@ -20,54 +20,104 @@ type: text/vnd.tiddlywiki
     </span>
 
     <$reveal state=<<popupTiddler>> type="popup" position="belowleft">
-      <div class="tc-drop-down py-drop-down">
-	<$button class="tc-btn-invisible">
-	  Outstanding
-	  <$action-setfield $tiddler=<<stateTiddler>> filter="[!tag[done]]"/>
-	</$button>
-	<$button class="tc-btn-invisible">
-	  Scheduled
-	  <$action-setfield $tiddler=<<stateTiddler>> filter="[!tag[done]has[due]]"/>
-	</$button>
-	<hr />
-	<$button class="tc-btn-invisible">
-	  In Progress
-	  <$action-setfield $tiddler=<<stateTiddler>> filter="[!tag[done]stage[progress]]"/>
-	</$button>
-	<$button class="tc-btn-invisible">
-	  In Progress - Secondary
-	  <$action-setfield $tiddler=<<stateTiddler>> filter="[!tag[done]stage[secondary]]"/>
-	</$button>
-	<$button class="tc-btn-invisible">
-	  In Backlog
-	  <$action-setfield $tiddler=<<stateTiddler>> filter="[!tag[done]stage[backlog]]"/>
-	</$button>
-	<$button class="tc-btn-invisible">
-	  In Review
-	  <$action-setfield $tiddler=<<stateTiddler>> filter="[!tag[done]stage[review]]"/>
-	</$button>
-	<$button class="tc-btn-invisible">
-	  In Blocked
-	  <$action-setfield $tiddler=<<stateTiddler>> filter="[!tag[done]stage[blocked]]"/>
-	</$button>
-	<hr />
-	<$button class="tc-btn-invisible">
-	  High priority
-	  <$action-setfield $tiddler=<<stateTiddler>> filter="[!tag[done]priority[3]]"/>
-	</$button>
-	<$button class="tc-btn-invisible">
-	  Medium priority
-	  <$action-setfield $tiddler=<<stateTiddler>> filter="[!tag[done]priority[2]]"/>
-	</$button>
-	<$button class="tc-btn-invisible">
-	  Low priority
-	  <$action-setfield $tiddler=<<stateTiddler>> filter="[!tag[done]priority[1]]"/>
-	</$button>
-	<$button class="tc-btn-invisible">
-	  Completed
-	  <$action-setfield $tiddler=<<stateTiddler>> filter="[tag[done]]"/>
-	</$button>
-      </div>
+    <div class="tc-drop-down py-drop-down">
+	  <$button class="tc-btn-invisible">
+	    Outstanding
+	    <$action-setfield $tiddler=<<stateTiddler>> filter="[!tag[done]]"/>
+	  </$button>
+	  <$button class="tc-btn-invisible">
+	    Scheduled
+	    <$action-setfield $tiddler=<<stateTiddler>> filter="[!tag[done]has[due]]"/>
+	  </$button>
+	  <hr />
+	  <$button class="tc-btn-invisible">
+	    New Tasks
+	    <$action-setfield $tiddler=<<stateTiddler>> filter="[!tag[done]stage[new]]"/>
+	  </$button>
+	  <$button class="tc-btn-invisible">
+	    Backlog
+	    <$action-setfield $tiddler=<<stateTiddler>> filter="[!tag[done]stage[backlog]]"/>
+	  </$button>
+	  <$button class="tc-btn-invisible">
+	    Next Tasks
+	    <$action-setfield $tiddler=<<stateTiddler>> filter="[!tag[done]stage[secondary]]"/>
+	  </$button>
+	  <$button class="tc-btn-invisible">
+	    In Progress Tasks
+	    <$action-setfield $tiddler=<<stateTiddler>> filter="[!tag[done]stage[progress]]"/>
+	  </$button>
+	  <$button class="tc-btn-invisible">
+	    Blocked
+	    <$action-setfield $tiddler=<<stateTiddler>> filter="[!tag[done]stage[blocked]]"/>
+	  </$button>
+	  <$button class="tc-btn-invisible">
+	    In Redefine
+	    <$action-setfield $tiddler=<<stateTiddler>> filter="[!tag[done]stage[redefine]]"/>
+	  </$button>
+	  <$button class="tc-btn-invisible">
+	    In Review
+	    <$action-setfield $tiddler=<<stateTiddler>> filter="[!tag[done]stage[review]]"/>
+	  </$button>
+	  <$button class="tc-btn-invisible">
+	    In Tracking
+	    <$action-setfield $tiddler=<<stateTiddler>> filter="[!tag[done]stage[tracking]]"/>
+	  </$button>
+	  <$button class="tc-btn-invisible">
+	    Rejected
+	    <$action-setfield $tiddler=<<stateTiddler>> filter="[!tag[done]stage[rejected]]"/>
+	  </$button>
+	  <$button class="tc-btn-invisible">
+	    Done
+	    <$action-setfield $tiddler=<<stateTiddler>> filter="[!tag[done]stage[done]]"/>
+	  </$button>
+	  <hr />
+	  <$button class="tc-btn-invisible">
+	  	Coffee break (1)
+	    <$action-setfield $tiddler=<<stateTiddler>> filter="[!tag[done]size[coffee]]"/>
+	  </$button>
+	  <$button class="tc-btn-invisible">
+	  	Tiny (1)
+	    <$action-setfield $tiddler=<<stateTiddler>> filter="[!tag[done]size[tiny]]"/>
+	  </$button>
+	  <$button class="tc-btn-invisible">
+	  	Small (2)
+	    <$action-setfield $tiddler=<<stateTiddler>> filter="[!tag[done]size[small]]"/>
+	  </$button>
+	  <$button class="tc-btn-invisible">
+	  	Medium (3)
+	    <$action-setfield $tiddler=<<stateTiddler>> filter="[!tag[done]size[medium]]"/>
+	  </$button>
+	  <$button class="tc-btn-invisible">
+	  	Large (5)
+	    <$action-setfield $tiddler=<<stateTiddler>> filter="[!tag[done]size[large]]"/>
+	  </$button>
+	  <$button class="tc-btn-invisible">
+	  	XL (8)
+	    <$action-setfield $tiddler=<<stateTiddler>> filter="[!tag[done]size[xlarge]]"/>
+	  </$button>
+	  <$button class="tc-btn-invisible">
+	  	XXL (13) - break down
+	    <$action-setfield $tiddler=<<stateTiddler>> filter="[!tag[done]size[xxlarge]]"/>
+	  </$button>
+	  <hr />
+	  <$button class="tc-btn-invisible">
+	    High priority
+	    <$action-setfield $tiddler=<<stateTiddler>> filter="[!tag[done]priority[3]]"/>
+	  </$button>
+	  <$button class="tc-btn-invisible">
+	    Medium priority
+	    <$action-setfield $tiddler=<<stateTiddler>> filter="[!tag[done]priority[2]]"/>
+	  </$button>
+	  <$button class="tc-btn-invisible">
+	    Low priority
+	    <$action-setfield $tiddler=<<stateTiddler>> filter="[!tag[done]priority[1]]"/>
+	  </$button>
+	  <hr />
+	  <$button class="tc-btn-invisible">
+	    Completed
+	    <$action-setfield $tiddler=<<stateTiddler>> filter="[tag[done]]"/>
+	  </$button>
+    </div>
     </$reveal>
 
     <dl>

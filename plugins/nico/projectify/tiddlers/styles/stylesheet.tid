@@ -117,6 +117,10 @@ type: text/vnd.tiddlywiki
   border: none;
 }
 
+.py-todo .py-btn.py-size {
+  border: none;
+}
+
 .py-todo .py-project-link {
   font-size: .8em;
   color: #aaa;
@@ -157,6 +161,14 @@ type: text/vnd.tiddlywiki
   border-radius: 4px;
 }
 
+.py-todo-actions .py-btn,
+.py-todo .py-btn.py-size {
+  color: #999;
+  fill: #999;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
 .py-due-date.py-overdue {
   color: <<colour background>>;
   background: #e73939;
@@ -190,6 +202,18 @@ type: text/vnd.tiddlywiki
 @media (min-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
   .py-todo .py-todo-actions .py-btn.py-not-scheduled,
   .py-todo .py-todo-actions .py-btn.py-stage- {
+    opacity: 0;
+    transition: opacity ease-in .14s;
+  }
+
+  .py-todo:hover .py-todo-actions .py-btn {
+    opacity: 1 !important;
+  }
+}
+
+@media (min-width: {{$:/themes/tiddlywiki/vanilla/metrics/sidebarbreakpoint}}) {
+  .py-todo .py-todo-actions .py-btn.py-not-scheduled,
+  .py-todo .py-todo-actions .py-btn.py-size- {
     opacity: 0;
     transition: opacity ease-in .14s;
   }
@@ -308,6 +332,14 @@ type: text/vnd.tiddlywiki
   text-align: center;
 }
 
+.py-stage-new, .py-stage-new svg,
+.py-drop-down .py-stage-new,
+.py-drop-down .py-stage-new svg,
+.py-btn.py-stage-new {
+  fill: #3079ff;
+  color: #3079ff;
+}
+
 .py-stage-backlog, .py-stage-backlog svg,
 .py-drop-down .py-stage-backlog,
 .py-drop-down .py-stage-backlog svg,
@@ -324,12 +356,28 @@ type: text/vnd.tiddlywiki
   color: #e77a39;
 }
 
+.py-stage-progress, .py-stage-progress svg,
+.py-drop-down .py-stage-progress,
+.py-drop-down .py-stage-progress svg,
+.py-btn.py-stage-progress {
+  fill: #24cd5e;
+  color: #24cd5e;
+}
+
 .py-stage-blocked, .py-stage-blocked svg,
 .py-drop-down .py-stage-blocked,
 .py-drop-down .py-stage-blocked svg,
 .py-btn.py-stage-blocked {
   fill: #e73939;
   color: #e73939;
+}
+
+.py-stage-redefine, .py-stage-redefine svg,
+.py-drop-down .py-stage-redefine,
+.py-drop-down .py-stage-redefine svg,
+.py-btn.py-stage-redefine {
+  fill: #a225ee;
+  color: #a225ee;
 }
 
 .py-stage-review, .py-stage-review svg,
@@ -340,12 +388,94 @@ type: text/vnd.tiddlywiki
   color: #a225ee;
 }
 
-.py-stage-progress, .py-stage-progress svg,
-.py-drop-down .py-stage-progress,
-.py-drop-down .py-stage-progress svg,
-.py-btn.py-stage-progress {
+.py-stage-tracking, .py-stage-tracking svg,
+.py-drop-down .py-stage-tracking,
+.py-drop-down .py-stage-tracking svg,
+.py-btn.py-stage-tracking {
+  fill: #a225ee;
+  color: #a225ee;
+}
+
+.py-stage-rejected, .py-stage-rejected svg,
+.py-drop-down .py-stage-rejected,
+.py-drop-down .py-stage-rejected svg,
+.py-btn.py-stage-rejected {
+  fill: #e73939;
+  color: #e73939;
+}
+
+.py-stage-done, .py-stage-done svg,
+.py-drop-down .py-stage-done,
+.py-drop-down .py-stage-done svg,
+.py-btn.py-stage-done {
   fill: #24cd5e;
   color: #24cd5e;
+}
+
+.tc-drop-down .py-sizes {
+  display: flex;
+  align-items: space-between;
+}
+
+.tc-drop-down .py-sizes .tc-btn-invisible {
+  width: auto;
+  text-align: center;
+}
+
+.py-size-coffee, .py-size-coffee svg,
+.py-drop-down .py-size-coffee,
+.py-drop-down .py-size-coffee svg,
+.py-btn.py-size-coffee {
+  fill: #7d3800ff;
+  color: #7d3800ff;
+}
+
+.py-size-tiny, .py-size-tiny svg,
+.py-drop-down .py-size-tiny,
+.py-drop-down .py-size-tiny svg,
+.py-btn.py-size-tiny {
+  fill: #7d3800ff;
+  color: #7d3800ff;
+}
+
+.py-size-small, .py-size-small svg,
+.py-drop-down .py-size-small,
+.py-drop-down .py-size-small svg,
+.py-btn.py-size-small {
+  fill: #3d423fff;
+  color: #3d423fff;
+}
+
+.py-size-medium, .py-size-medium svg,
+.py-drop-down .py-size-medium,
+.py-drop-down .py-size-medium svg,
+.py-btn.py-size-medium {
+  fill: #7d3800ff;
+  color: #7d3800ff;
+}
+
+.py-size-large, .py-size-large svg,
+.py-drop-down .py-size-large,
+.py-drop-down .py-size-large svg,
+.py-btn.py-size-large {
+  fill: #d69601ff;
+  color: #d69601ff;
+}
+
+.py-size-xlarge, .py-size-xlarge svg,
+.py-drop-down .py-size-xlarge,
+.py-drop-down .py-size-xlarge svg,
+.py-btn.py-size-xlarge {
+  fill: #3d423fff;
+  color: #3d423fff;
+}
+
+.py-size-xxlarge, .py-size-xxlarge svg,
+.py-drop-down .py-size-xxlarge,
+.py-drop-down .py-size-xxlarge svg,
+.py-btn.py-size-xxlarge {
+  fill: #e73939;
+  color: #e73939;
 }
 
 .py-project-category-manager-table {

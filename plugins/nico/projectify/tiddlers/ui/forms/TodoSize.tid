@@ -1,0 +1,25 @@
+created: 20210110175047050
+modified: 20250110175954318
+tags:
+title: $:/plugins/nico/projectify/ui/forms/TodoSize
+type: text/vnd.tiddlywiki
+
+\define size-icon()
+{{$:/plugins/nico/projectify/images/task$(size)$}}
+\end
+
+<div class="py-sizes">
+  <$list filter="coffee tiny small medium large xlarge xxlarge" variable="size">
+    <$button class={{{ [[tc-btn-invisible py-size-]addsuffix<size>] }}}>
+	  <<size-icon>>
+      <$action-setfield size=<<size>>/>
+      <$action-sendmessage $message="tm-auto-save-wiki"/>
+    </$button>
+  </$list>
+
+  <$button class="tc-btn-invisible">
+    {{$:/plugins/nico/projectify/images/slash-circle}}
+    <$action-deletefield $field="size"/>
+    <$action-sendmessage $message="tm-auto-save-wiki"/>
+  </$button>
+</div>

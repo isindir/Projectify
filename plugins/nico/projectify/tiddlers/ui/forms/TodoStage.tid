@@ -9,7 +9,7 @@ type: text/vnd.tiddlywiki
 \end
 
 <div class="py-stages">
-  <$list filter="backlog review blocked secondary progress" variable="stage">
+  <$list filter="new backlog secondary progress blocked redefine review tracking rejected done" variable="stage">
     <$button class={{{ [[tc-btn-invisible py-stage-]addsuffix<stage>] }}}>
 	  <<stage-icon>>
       <$action-setfield stage=<<stage>>/>
