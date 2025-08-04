@@ -7,7 +7,7 @@ type: text/vnd.tiddlywiki
 \whitespace trim
 
 \define py-archived-projects()
-[all[tiddlers]tag[Project]!has[draft.of]!title[Inbox]tag[done]sort[title]]
+[all[tiddlers]tag[Project]!has[draft.of]!title[Inbox]tag[done]sort[modified]reverse[]]
 \end
 
 \define py-active-projects()
@@ -19,7 +19,7 @@ type: text/vnd.tiddlywiki
 \end
 
 \define py-has-scheduled-todos-in-projects()
-[all[tiddlers]tag[todo]!tag[done]!has[draft.of]has[due]limit[1]]
+[all[tiddlers]tag[todo]!tag[done]!has[draft.of]has[due]sort[priority]limit[1]]
 \end
 
 \define py-has-active-projects()
@@ -87,7 +87,7 @@ type: text/vnd.tiddlywiki
 \end
 
 \define py-completed-todos()
-[all[tiddlers]tag{!!title}tag[done]!has[draft.of]sort[created]]
+[all[tiddlers]tag{!!title}tag[done]!has[draft.of]sort[modified]]
 \end
 
 \define py-todos-due-today()
