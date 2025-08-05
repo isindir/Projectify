@@ -1,6 +1,6 @@
 {
   "name": "projectify",
-  "version": "0.15.8",
+  "version": "0.15.9",
   "description": "Project and todo management in TiddlyWiki",
   "main": "index.js",
   "scripts": {
