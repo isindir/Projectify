@@ -1,0 +1,48 @@
+created: 20200427152938733
+modified: 20210122101816246
+tags: [[Projectify documentation]]
+title: $:/plugins/nico/projectify/doc/Scrum
+type: text/vnd.tiddlywiki
+
+Projectify allows you to classify tasks along three independent dimensions to help organize and prioritize your work:
+
+* ''Task Size'': Estimates the effort or complexity required to complete a task
+* ''Task Stage'': Tracks the current state or workflow position of a task
+* ''Task Priority'': Indicates the urgency or importance of a task
+
+All three dimensions are //completely optional//. Use them as needed to match your workflow and project management style.
+
+!! {{$:/plugins/nico/projectify/images/tasksize}} Task Size
+
+|!Scale |!Typical Time |!Complexity |!Fibonacci (Story Points) |!T-shirt size |
+|@@.py-size-coffee {{$:/plugins/nico/projectify/images/taskcoffee}}@@ Coffee |< 1 hour |Trivial fix, config tweak |0 or 0.5 |- (Spike / Trivial) |
+|@@.py-size-tiny {{$:/plugins/nico/projectify/images/tasktiny}}@@ Tiny |1-4 hours |Simple bug fix, minor feature |1 |XS |
+|@@.py-size-small {{$:/plugins/nico/projectify/images/tasksmall}}@@ Small |4-8 hours |Single component change, limited scope |2 |S |
+|@@.py-size-medium {{$:/plugins/nico/projectify/images/taskmedium}}@@ Medium |1-2 days |Multi-file changes, some testing |3 |M |
+|@@.py-size-large {{$:/plugins/nico/projectify/images/tasklarge}}@@ Large |3-5 days |Cross-cutting changes, extensive testing |5 |L |
+|@@.py-size-xlarge {{$:/plugins/nico/projectify/images/taskxlarge}}@@ XLarge |1-2 weeks |Major feature, architectural changes |8 |XL |
+|@@.py-size-xxlarge {{$:/plugins/nico/projectify/images/taskxxlarge}}@@ XXLarge |2+ weeks |Epic-level work, multiple systems |13 |XXL |
+
+!! {{$:/plugins/nico/projectify/images/taskprogress}} Task Stages
+
+|!Stage |!Description |
+|@@.py-stage-new {{$:/plugins/nico/projectify/images/tasknew}}@@ New |Just created, not yet triaged |
+|@@.py-stage-backlog {{$:/plugins/nico/projectify/images/taskbacklog}}@@ Backlog |Prioritized, waiting to be started |
+|@@.py-stage-secondary {{$:/plugins/nico/projectify/images/tasksecondary}}@@ Secondary |Lower priority, deferred work |
+|@@.py-stage-progress {{$:/plugins/nico/projectify/images/taskprogress}}@@ Progress |Actively being worked on |
+|@@.py-stage-blocked {{$:/plugins/nico/projectify/images/taskblocked}}@@ Blocked |Waiting on dependencies or decisions |
+|@@.py-stage-redefine {{$:/plugins/nico/projectify/images/taskredefine}}@@ Redefine |Needs clarification or rescoping |
+|@@.py-stage-review {{$:/plugins/nico/projectify/images/taskreview}}@@ Review |Completed, awaiting review/approval |
+|@@.py-stage-tracking {{$:/plugins/nico/projectify/images/tasktracking}}@@ Tracking |Monitoring deployed changes |
+|@@.py-stage-rejected {{$:/plugins/nico/projectify/images/taskrejected}}@@ Rejected |Won't be implemented |
+|@@.py-stage-done {{$:/plugins/nico/projectify/images/taskdone}}@@ Done |Completed and verified |
+
+!! {{$:/plugins/nico/projectify/images/flag}} Task Priority
+
+|!Priority |!Level |!Description |
+|@@.py-priority-3 {{$:/plugins/nico/projectify/images/flag}}@@ High |3 |Critical, urgent tasks that must be done immediately |
+|@@.py-priority-2 {{$:/plugins/nico/projectify/images/flag}}@@ Medium |2 |Important tasks that should be done soon |
+|@@.py-priority-1 {{$:/plugins/nico/projectify/images/flag}}@@ Low |1 |Nice to have, can be deferred if needed |
+
+<<py-tip "These dimensions work together: a ''Large'' task might be in ''Progress'' with ''High'' priority, giving you a complete picture at a glance.">>
+
