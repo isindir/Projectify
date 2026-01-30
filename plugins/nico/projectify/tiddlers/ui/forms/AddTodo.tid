@@ -17,6 +17,7 @@ type: text/vnd.tiddlywiki
   <$action-setfield $tiddler={{$:/temp/projectify/new-todo}} stage={{{ [<stateTiddler>get[stage]] }}}/>
   <$action-setfield $tiddler={{$:/temp/projectify/new-todo}} priority={{{ [<stateTiddler>get[priority]] }}}/>
   <$action-setfield $tiddler={{$:/temp/projectify/new-todo}} size={{{ [<stateTiddler>get[size]] }}}/>
+  <$action-deletetiddler $tiddler="$:/temp/projectify/new-todo"/>
   <$action-deletefield $tiddler=<<stateTiddler>> $field="todo-name"/>
   <$action-deletefield $tiddler=<<stateTiddler>> $field="due"/>
   <$action-deletefield $tiddler=<<stateTiddler>> $field="priority"/>
