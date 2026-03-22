@@ -177,9 +177,17 @@ type: text/vnd.tiddlywiki
 }
 
 .py-due-date.py-due-today {
-  color: <<colour primary>>;
-  fill: <<colour primary>>;
-  border-color: <<colour primary>>;
+  color: <<colour background>>;
+  background: #209f00;
+  border-color: #209f00;
+  font-weight: bold;
+}
+
+.py-due-date.py-due-tomorrow {
+  color: <<colour background>>;
+  background: #0003b7;
+  border-color: #0003b7;
+  font-weight: bold;
 }
 
 .py-todo .py-todo-actions .py-btn {

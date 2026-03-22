@@ -5,6 +5,14 @@ tags:
 title: $:/plugins/nico/projectify/changelog
 type: text/vnd.tiddlywiki
 
+! Release 0.15.11
+
+!! Fixes
+
+* Task date colors for Tomorrow and Today are changed
+* dev dependency nodemon updated to 3.1.14
+* nodejs updated to 24.14.0
+
 ! Release 0.15.10
 
 !! Fixes
